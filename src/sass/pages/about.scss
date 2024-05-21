@@ -1,0 +1,117 @@
+.about {
+  scroll-behavior: smooth;
+  padding: 150px 0px;
+  background-color: #fafafa;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    &__title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        color: #111111;
+        font-family: Inter;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: 6%;
+      }
+      span {
+        border-radius: 10px;
+        width: 50px;
+        height: 7px;
+        background-color: #633ed7;
+      }
+      p {
+        color: #111111;
+        font-family: Inter;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 100%;
+        max-width: 980px;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      .about__content__left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h3 {
+          color: rgb(0, 0, 0);
+          font-family: Inter;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 64px;
+          letter-spacing: 6%;
+        }
+        .text__wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          p {
+            width: 100%;
+            max-width: 550px;
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0%;
+          }
+        }
+        .about__btn {
+          width: 100%;
+          max-width: 200px;
+          height: 50px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 26px;
+          letter-spacing: 0%;
+          background-color: #633ed7;
+          border-radius: 5px;
+        }
+      }
+      .about__content__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h3 {
+          color: rgb(0, 0, 0);
+          font-family: Inter;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 64px;
+          letter-spacing: 6%;
+        }
+        .skills__list {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 10px;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #d9d9d9;
+            border-radius: 5px;
+            color: #666666;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 0%;
+          }
+        }
+      }
+    }
+  }
+}
