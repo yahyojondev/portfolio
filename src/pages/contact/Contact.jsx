@@ -1,9 +1,18 @@
-import { Button, TextField } from "@mui/material";
-import React, { memo } from "react";
+import { Button } from "@mui/material";
+import React, { memo, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   window.scrollTo(0, 0);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSend = (e) => {
+    e.preventDefault();
+    console.log(name, email, message);
+  };
   return (
     <div className="about contact">
       <div className="container">
@@ -19,21 +28,25 @@ const Contact = () => {
           <div className="contact__content">
             <form>
               <div className="input__wrapper">
-                <TextField
+                <input
                   required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="Enter Your Name"
                   className="form__input"
-                  id="outlined-basic"
-                  label="Enter Your Name"
-                  variant="outlined"
+                  type="text"
                 />
-                <TextField
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
+                  placeholder="Enter Your Email"
                   className="form__input"
-                  id="outlined-basic"
-                  label="Enter Your Email"
-                  variant="outlined"
+                  type="text"
                 />
                 <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   required
                   placeholder="Enter Your Messaage"
                   className="form__placeholder"
@@ -41,9 +54,15 @@ const Contact = () => {
                   id=""
                 ></textarea>
               </div>
-              <Button className="contact__btn" variant="contained">
-                Send
-              </Button>
+              <div className="form__btn">
+                <Button
+                  onClick={handleSend}
+                  className="contact__btn"
+                  variant="contained"
+                >
+                  Send
+                </Button>
+              </div>
             </form>
           </div>
         </div>

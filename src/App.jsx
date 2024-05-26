@@ -6,6 +6,10 @@ import Contact from "./pages/contact/Contact";
 import Project from "./pages/project/Project";
 import Footer from "./components/footer/Footer";
 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 function App() {
   return (
     <>
