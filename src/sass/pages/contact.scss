@@ -6,43 +6,61 @@
   background-size: cover;
   .contact__content {
     display: flex;
-    padding: 100px 20px 50px;
-    // align-items: center;
-    // justify-content: center;
+    padding: 10px;
     margin: auto;
     border: 2px solid #7843e9;
     width: 100%;
     max-width: 600px;
-    // height: 600px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    @media only screen and (min-width: 650px) {
+      padding: 50px 20px 50px;
+    }
     .input__wrapper {
       display: flex;
       flex-direction: column;
       gap: 30px;
       .form__input {
-        width: 550px;
+        width: 240px;
         color: rgb(0, 0, 0);
         font-family: Inter;
         font-size: 16px;
         font-weight: 700;
         line-height: 26px;
         letter-spacing: 0%;
+        @media only screen and (min-width: 430px) {
+          width: 350px;
+        }
+        @media only screen and (min-width: 500px) {
+          width: 400px;
+        }
+        @media only screen and (min-width: 600px) {
+          width: 500px;
+        }
+        @media only screen and (min-width: 650px) {
+          width: 550px;
+        }
       }
       .form__placeholder {
-        width: 550px;
-        height: 150px;
+        width: 100%;
+        height: 100px;
         border-radius: 5px;
         outline: none;
         padding: 20px 10px;
         border: 2px solid #ddd;
         color: rgb(0, 0, 0);
         font-family: Inter;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 26px;
         letter-spacing: 0%;
         background-color: transparent;
+
+        @media only screen and (min-width: 650px) {
+          font-size: 16px;
+          height: 150px;
+          width: 550px;
+        }
       }
       .form__placeholder:focus {
         border: 2px solid #1976d2;
@@ -55,13 +73,18 @@
       .contact__btn {
         width: 100%;
         max-width: 150px;
-        height: 50px;
+        height: 40px;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0%;
         background-color: #7843e9;
+        @media only screen and (min-width: 650px) {
+          font-size: 16px;
+          height: 50px;
+          max-width: 200px;
+        }
       }
     }
   }

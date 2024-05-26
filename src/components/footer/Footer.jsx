@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import footerlogo from "../../assets/images/logorasm.jpg";
-import gitlogo from "../../assets/images/whitegithub.jpg";
-import telelogo from "../../assets/images/whitetelegram.jpg";
+import gitlogo from "../../assets/images/github.jpg";
+import telelogo from "../../assets/images/download.jpg";
 import linkedinlogo from "../../assets/images/whitelinkedin.png";
 import twitterlogo from "../../assets/images/whitetwitter.png";
 
@@ -22,10 +22,21 @@ const Footer = () => {
             <div className="footer__top__right">
               <h3>SOCIAL</h3>
               <div className="img__wrapper">
-                <img src={gitlogo} alt="" />
-                <img src={linkedinlogo} alt="" />
-                <img src={twitterlogo} alt="" />
-                <img src={telelogo} alt="" />
+                <a target="_blank" href="https://github.com/yahyojondev">
+                  <img src={gitlogo} alt="" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/yahyobek-nabijonov-0b30232aa/"
+                >
+                  <img src={linkedinlogo} alt="" />
+                </a>
+                <a target="_blank" href="">
+                  <img src={twitterlogo} alt="" />
+                </a>
+                <a target="_blank" href="t.me/Discipline_003">
+                  <img src={telelogo} alt="" />
+                </a>
               </div>
             </div>
           </div>

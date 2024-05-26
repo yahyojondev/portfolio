@@ -10,10 +10,21 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="network__wrapper">
-        <img src={telegramlogo} alt="" />
-        <img src={githublogo} alt="" />
-        <img src={linkedinlogo} alt="" />
-        <img src={twitterlogo} alt="" />
+        <a target="_blank" href="t.me/Discipline_003">
+          <img src={telegramlogo} alt="" />
+        </a>
+        <a target="_blank" href="https://github.com/yahyojondev">
+          <img src={githublogo} alt="" />
+        </a>
+        <a target="_blank" href="">
+          <img
+            src={linkedinlogo}
+            alt="https://www.linkedin.com/in/yahyobek-nabijonov-0b30232aa/"
+          />
+        </a>
+        <a target="_blank" href="">
+          <img src={twitterlogo} alt="" />
+        </a>
       </div>
       <div className="container">
         <div className="hero__wrapper">

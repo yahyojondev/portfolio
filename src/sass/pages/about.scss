@@ -1,11 +1,12 @@
 .about {
   scroll-behavior: smooth;
-  padding: 150px 0px;
   background-color: #fafafa;
+  padding: 50px 0;
   &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
+
     &__title {
       display: flex;
       align-items: center;
@@ -14,10 +15,13 @@
       h2 {
         color: #111111;
         font-family: Inter;
-        font-size: 54px;
+        font-size: 35px;
         font-weight: 700;
         line-height: 64px;
         letter-spacing: 6%;
+        @media only screen and (min-width: 1000px) {
+          font-size: 54px;
+        }
       }
       span {
         border-radius: 10px;
@@ -28,29 +32,44 @@
       p {
         color: #111111;
         font-family: Inter;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 26px;
         letter-spacing: 0%;
         text-align: center;
         width: 100%;
         max-width: 980px;
+        @media only screen and (min-width: 1000px) {
+          font-size: 22px;
+        }
       }
     }
     &__content {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      gap: 30px;
+      @media only screen and (min-width: 1000px) {
+        gap: 0;
+        flex-direction: row;
+      }
       .about__content__left {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 10px;
+        @media only screen and (min-width: 1000px) {
+          gap: 30px;
+        }
         h3 {
           color: rgb(0, 0, 0);
           font-family: Inter;
-          font-size: 30px;
+          font-size: 24px;
           font-weight: 600;
           line-height: 64px;
           letter-spacing: 6%;
+          @media only screen and (min-width: 1000px) {
+            font-size: 30px;
+          }
         }
         .text__wrapper {
           display: flex;
@@ -61,23 +80,31 @@
             max-width: 550px;
             color: rgb(0, 0, 0);
             font-family: Inter;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 26px;
             letter-spacing: 0%;
+            @media only screen and (min-width: 1000px) {
+              font-size: 16px;
+            }
           }
         }
         .about__btn {
           width: 100%;
-          max-width: 200px;
-          height: 50px;
+          max-width: 180px;
+          font-size: 14px;
+          height: 40px;
           font-family: Inter;
-          font-size: 16px;
           font-weight: 800;
           line-height: 26px;
           letter-spacing: 0%;
           background-color: #633ed7;
           border-radius: 5px;
+          @media only screen and (min-width: 1000px) {
+            max-width: 200px;
+            height: 50px;
+            font-size: 16px;
+          }
         }
       }
       .about__content__right {
@@ -87,15 +114,22 @@
         h3 {
           color: rgb(0, 0, 0);
           font-family: Inter;
-          font-size: 30px;
+          font-size: 24px;
           font-weight: 600;
           line-height: 64px;
           letter-spacing: 6%;
+          @media only screen and (min-width: 1000px) {
+            font-size: 30px;
+          }
         }
         .skills__list {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
+          display: flex;
+          flex-wrap: wrap;
           gap: 10px;
+          @media only screen and (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+          }
           li {
             display: flex;
             align-items: center;
