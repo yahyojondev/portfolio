@@ -1,5 +1,8 @@
 .contact {
-  padding: 150px 0px 50px;
+  padding: 50px 0px 0px;
+  @media only screen and (min-width: 600px) {
+    padding: 150px 0px 50px;
+  }
   background: url(https://www.rammaheshwari.com/assets/svg/common-bg.svg)
     no-repeat;
   background-position: center;
