@@ -16,13 +16,16 @@ const Hero = () => {
         <a target="_blank" href="https://github.com/yahyojondev">
           <img src={githublogo} alt="" />
         </a>
-        <a target="_blank" href="">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/yahyobek-nabijonov-0b30232aa/"
+        >
           <img
             src={linkedinlogo}
             alt="https://www.linkedin.com/in/yahyobek-nabijonov-0b30232aa/"
           />
         </a>
-        <a target="_blank" href="">
+        <a target="_blank" href="https://x.com/yahyobek68167">
           <img src={twitterlogo} alt="" />
         </a>
       </div>

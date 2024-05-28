@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Contact from "./pages/contact/Contact";
 import Project from "./pages/project/Project";
 import Footer from "./components/footer/Footer";
+import loading from "./assets/images/382.gif";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,10 +15,9 @@ import Loading from "./components/loading/Loading";
 function App() {
   return (
     <>
-      <iframe
-        src="https://lottie.host/embed/6a5a122e-eb35-43a7-90d5-0355832b97a2/dJOHBc0kfr.json"
-        frameborder="0"
-      ></iframe>
+      <div className="loading">
+        <iframe src={loading} frameborder="0"></iframe>
+      </div>
       <div className="app">
         <Navbar />
         <Routes>

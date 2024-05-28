@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import footerlogo from "../../assets/images/logorasm.jpg";
+import footerlogo from "../../assets/images/logo_trial.png";
 import gitlogo from "../../assets/images/github.jpg";
 import telelogo from "../../assets/images/download.jpg";
 import linkedinlogo from "../../assets/images/whitelinkedin.png";

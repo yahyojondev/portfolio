@@ -4,13 +4,24 @@ import { NavLink } from "react-router-dom";
 const Contact = () => {
   window.scrollTo(0, 0);
 
+  const bot__token = "7202579134:AAH-B6pvkVTgPiJKDzrnpXoZmRInnh78Vpc";
+  // Get updates: https://api.telegram.org/bot7202579134:AAH-B6pvkVTgPiJKDzrnpXoZmRInnh78Vpc/getUpdates
+  const chat_id = "-4258419307";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSend = (e) => {
-    e.preventDefault();
     console.log(name, email, message);
+    let text = "<h2>Xabar</h2> %0A%0A";
+    text += `Name:<b>${name}</b> %0A`;
+    text += `Email: ${email} %0A`;
+    text += `Message: ${message}`;
+    let url = ` https://api.telegram.org/bot${bot__token}/sendMessage?chat_id=${chat_id}&text=${text}&parse_mode=html`;
+    let api = new XMLHttpRequest();
+    api.open("Get", url, true);
+    api.send();
   };
   return (
     <div className="about contact">
@@ -20,8 +31,8 @@ const Contact = () => {
             <h2>CONTACT</h2>
             <span></span>
             <p>
-              Feel free to Contact me by submitting the form below and I will
-              get back to you as soon as possible
+              Contact me by filling out the form below and I will respond as
+              soon as possible
             </p>
           </div>
           <div className="contact__content">

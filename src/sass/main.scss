@@ -38,6 +38,7 @@ a {
   }
 }
 
+.loading,
 iframe {
   position: fixed;
   width: 100vw;
@@ -46,7 +47,17 @@ iframe {
   align-items: center;
   justify-content: center;
   z-index: 99999999;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+}
+iframe {
+  padding-top: 0px;
+  padding-left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
 }
 
 @import "./components/footer.scss";
