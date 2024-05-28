@@ -1,7 +1,6 @@
 import { Button } from "@mui/material";
 import React, { memo, useState } from "react";
 import { NavLink } from "react-router-dom";
-
 const Contact = () => {
   window.scrollTo(0, 0);
 

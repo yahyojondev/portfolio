@@ -9,10 +9,15 @@ import Footer from "./components/footer/Footer";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Loading from "./components/loading/Loading";
 
 function App() {
   return (
     <>
+      <iframe
+        src="https://lottie.host/embed/6a5a122e-eb35-43a7-90d5-0355832b97a2/dJOHBc0kfr.json"
+        frameborder="0"
+      ></iframe>
       <div className="app">
         <Navbar />
         <Routes>
@@ -21,6 +26,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/project" element={<Project />} />
         </Routes>
+        <Loading />
         <Footer />
       </div>
     </>
